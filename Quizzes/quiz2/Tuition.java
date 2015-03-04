@@ -16,15 +16,18 @@ public class Tuition {
 			input.close();
 			
 			double sum = 0.0;
-
-			for (int i=1;i<=4;i++) {
-				
+			
+			int i = 1;
+			while (i<=4) {
+			
 				sum+=tuition;
+				
 				tuition+=(tuition*rate);
 				
-				System.out.printf("The tuition for the four years is:%.2f\n",sum);
+				i++;
+			}
+				System.out.printf("The tuition for the four years is:$%.2f\n",sum);
 
-
+				
 			}	  
 		}	
-}
